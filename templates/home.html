@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Smart Home Temperature</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2; /* Light gray background */
+            color: #333; /* Default text color */
+        }
+
+        header {
+            background-color: #40564d; /* Dark blue background */
+            color: #ffffff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav a {
+            color: #ffffff; /* White link color */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            font-size: 16px;
+        }
+
+        .footer_content{
+            color: #333;
+        }
+
+        .content {
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(186,220,204,255); /* Google Blue background */
+            color: #ffffff; /* White text color */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        button {
+            background-color: #ffffff; /* White button color */
+            color: #4285F4;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .maincon {
+            padding: 40px;
+            text-align: justify;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #40564d; /* Dark blue background for footer */
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h3>Diabetes prediction</h3>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h2>Your Health Matters: Start with a Diabetes Check!</h2>
+    <form action="{{ url_for('redirect_to_index') }}" method="post" class="text-center mt-4">
+        <button type="submit" class="btn btn-primary">Predict!</button>
+    </form>
+    <!-- Additional content goes here -->
+</div>
+
+<div class="maincon">
+    <h2>About Diabetes Prediction</h2>
+    <p>Diabetes prediction is a critical aspect of proactive healthcare aimed at identifying individuals at risk of developing diabetes or those who already have the condition but may not be aware of it. With the global prevalence of diabetes steadily rising, accurate prediction models play a pivotal role in early intervention, prevention, and management strategies.</p>
+
+    <p>its core, diabetes prediction utilizes various factors such as demographic information, medical history, lifestyle habits, and biomarkers to assess an individual's risk of developing diabetes. These factors are often analyzed using advanced machine learning algorithms and statistical techniques to create predictive models that can forecast the likelihood of diabetes occurrence within a given timeframe.</p> 
+        
+    <p>One of the primary goals of diabetes prediction is to enable healthcare professionals to identify high-risk individuals and implement targeted interventions to prevent or delay the onset of diabetes-related complications. By identifying individuals with pre-diabetes or those at risk of developing type 2 diabetes, healthcare providers can recommend lifestyle modifications, such as dietary changes, increased physical activity, and weight management, to reduce the risk of progression to diabetes.</p> 
+        
+    <p> diabetes prediction models are instrumental in guiding screening and diagnostic efforts, allowing healthcare providers to allocate resources more efficiently and effectively. By targeting individuals who are most likely to benefit from screening tests, such as fasting blood glucose tests or oral glucose tolerance tests, healthcare systems can improve early detection rates and facilitate timely intervention.
+        
+        In addition to individual risk assessment, diabetes prediction models also have broader public health implications. By analyzing population-level data and identifying trends and patterns, public health authorities can develop targeted interventions and policy initiatives to address the underlying factors contributing to the diabetes epidemic. This may include initiatives aimed at promoting healthier lifestyles, improving access to preventive care, and reducing environmental risk factors.
+        
+        However, the development and implementation of effective diabetes prediction models come with various challenges and considerations. These include the need for large, diverse datasets to train and validate the models, ensuring the privacy and security of patient data, and addressing issues related to algorithm bias and accuracy.
+        
+        Despite these challenges, diabetes prediction holds immense promise for improving health outcomes and reducing the burden of diabetes on individuals and healthcare systems alike. By leveraging the power of predictive analytics and personalized medicine, healthcare providers can identify and support those at risk of diabetes, ultimately leading to better health outcomes and quality of life for millions of people worldwide.</p>
+</div>
+<!-- Contact Section -->
+<section id="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <div class="footer_content">
+        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+            <p>Email: info@diabetesprediction.com</p>
+            <p>Phone: 9133973930</p>
+            <p> 123 Main Street, City, Country</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 Diabetes prediction 
+</footer>
+
+</body>
+</html>
